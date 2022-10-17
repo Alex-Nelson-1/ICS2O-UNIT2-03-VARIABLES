@@ -2,7 +2,11 @@
  * Created on: Oct 2022
  * This file contains the JavaScript for index.html
  */
-
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello World!</p>"
+/*Input*/
+ const streetNumber = parseInt(document.getElementById("street-number").value)
+ const streetName = document.getElementById("street-name").value
+
+/*Output*/
+  document.getElementById("address").innerHTML = "Your street is:" + " " + streetNumber + " " + streetName + "."
 }
